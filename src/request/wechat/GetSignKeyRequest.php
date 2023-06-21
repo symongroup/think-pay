@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\pay\request\wechat;
+namespace symongroup\pay\request\wechat;
 
 use think\helper\Str;
 

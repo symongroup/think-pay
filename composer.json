@@ -1,23 +1,24 @@
 {
-    "name": "yunwuxin/think-pay",
+    "name": "symongroup/think-pay",
     "description": "thinkphp6的支付SDK",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "yunwuxin",
-            "email": "448901948@qq.com"
+            "name": "symongroup",
+            "email": "xiaobo.sun@qq.com"
         }
     ],
     "require": {
         "topthink/framework": "^6.0",
         "symfony/options-resolver": "^3.3",
         "nesbot/carbon": "^2.28",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "paypal/rest-api-sdk-php": "^1.14"
     },
     "autoload": {
         "psr-4": {
-            "yunwuxin\\pay\\": "src/"
+            "symongroup\\pay\\": "src/"
         },
         "files": [
             "src/common.php"
@@ -26,7 +27,7 @@
     "extra": {
         "think": {
             "services": [
-                "yunwuxin\\pay\\Service"
+                "symongroup\\pay\\Service"
             ],
             "config": {
                 "pay": "src/config.php"

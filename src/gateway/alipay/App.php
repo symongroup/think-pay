@@ -2,19 +2,19 @@
 // +----------------------------------------------------------------------
 // | ThinkPay
 // +----------------------------------------------------------------------
-// | Copyright (c) yunwuxin All rights reserved.
+// | Copyright (c) symongroup All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
 
-namespace yunwuxin\pay\gateway\alipay;
+namespace symongroup\pay\gateway\alipay;
 
-use yunwuxin\pay\entity\PurchaseResponse;
-use yunwuxin\pay\Gateway;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\request\alipay\TradeAppPayRequest;
+use symongroup\pay\entity\PurchaseResponse;
+use symongroup\pay\Gateway;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\request\alipay\TradeAppPayRequest;
 
 class App extends Gateway
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\pay;
+namespace symongroup\pay;
 
 abstract class Request
 {

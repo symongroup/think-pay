@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\pay\entity;
+namespace symongroup\pay\entity;
 
 use JsonSerializable;
 

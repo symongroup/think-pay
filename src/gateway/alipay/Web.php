@@ -1,11 +1,11 @@
 <?php
 
-namespace yunwuxin\pay\gateway\alipay;
+namespace symongroup\pay\gateway\alipay;
 
-use yunwuxin\pay\entity\PurchaseResponse;
-use yunwuxin\pay\Gateway;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\request\alipay\TradePagePayRequest;
+use symongroup\pay\entity\PurchaseResponse;
+use symongroup\pay\Gateway;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\request\alipay\TradePagePayRequest;
 
 class Web extends Gateway
 {

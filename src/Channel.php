@@ -2,13 +2,13 @@
 // +----------------------------------------------------------------------
 // | ThinkPay
 // +----------------------------------------------------------------------
-// | Copyright (c) yunwuxin All rights reserved.
+// | Copyright (c) symongroup All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
-namespace yunwuxin\pay;
+namespace symongroup\pay;
 
 use Closure;
 use GuzzleHttp\Client;
@@ -18,9 +18,9 @@ use Psr\Http\Message\ResponseInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use think\helper\Str;
 use think\Request;
-use yunwuxin\pay\entity\PurchaseResult;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\interfaces\Refundable;
+use symongroup\pay\entity\PurchaseResult;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Refundable;
 
 abstract class Channel
 {
@@ -72,7 +72,7 @@ abstract class Channel
 
     public function createRequest($class, ...$args)
     {
-        /** @var \yunwuxin\pay\Request $request */
+        /** @var \symongroup\pay\Request $request */
         $request = new $class($this);
 
         ($request)(...$args);
@@ -81,10 +81,10 @@ abstract class Channel
     }
 
     /**
-     * @param \yunwuxin\pay\Request $request
+     * @param \symongroup\pay\Request $request
      * @return mixed
      */
-    public function sendRequest(\yunwuxin\pay\Request $request)
+    public function sendRequest(\symongroup\pay\Request $request)
     {
         $request = $request->toPsrRequest();
 
@@ -96,7 +96,7 @@ abstract class Channel
     public function gateway($name)
     {
         $channel   = class_basename($this);
-        $className = "\\yunwuxin\\pay\\gateway\\" . Str::camel($channel) . "\\" . Str::studly($name);
+        $className = "\\symongroup\\pay\\gateway\\" . Str::camel($channel) . "\\" . Str::studly($name);
         if (class_exists($className)) {
             /** @var Gateway $gateway */
             $gateway = new $className($this);

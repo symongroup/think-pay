@@ -6,19 +6,19 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
 
-namespace yunwuxin\pay\traits;
+namespace symongroup\pay\traits;
 
 use Exception;
 use think\Model;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\Payment;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\Payment;
 
 /**
  * Trait RefundableModel
- * @package yunwuxin\pay\traits
+ * @package symongroup\pay\traits
  * @mixin Model
  */
 trait RefundableModel

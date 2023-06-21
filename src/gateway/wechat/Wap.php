@@ -1,12 +1,12 @@
 <?php
 
-namespace yunwuxin\pay\gateway\wechat;
+namespace symongroup\pay\gateway\wechat;
 
-use yunwuxin\pay\channel\Wechat;
-use yunwuxin\pay\entity\PurchaseResponse;
-use yunwuxin\pay\Gateway;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\request\wechat\UnifiedOrderRequest;
+use symongroup\pay\channel\Wechat;
+use symongroup\pay\entity\PurchaseResponse;
+use symongroup\pay\Gateway;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\request\wechat\UnifiedOrderRequest;
 
 class Wap extends Gateway
 {

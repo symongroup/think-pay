@@ -4,7 +4,7 @@ ThinkPHP Pay 扩展
 ## 安装
 
 ~~~
-composer require yunwuxin/think-pay
+composer require symongroup/think-pay
 ~~~
 
 

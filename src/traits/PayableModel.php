@@ -6,21 +6,21 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
-namespace yunwuxin\pay\traits;
+namespace symongroup\pay\traits;
 
 use Carbon\Carbon;
 use Exception;
 use RuntimeException;
 use think\Model;
-use yunwuxin\pay\entity\PurchaseResponse;
-use yunwuxin\pay\entity\PurchaseResult;
-use yunwuxin\pay\Payment;
+use symongroup\pay\entity\PurchaseResponse;
+use symongroup\pay\entity\PurchaseResult;
+use symongroup\pay\Payment;
 
 /**
  * Trait PayableModel
- * @package yunwuxin\pay\traits
+ * @package symongroup\pay\traits
  * @mixin Model
  */
 trait PayableModel

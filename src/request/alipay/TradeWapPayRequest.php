@@ -1,8 +1,8 @@
 <?php
 
-namespace yunwuxin\pay\request\alipay;
+namespace symongroup\pay\request\alipay;
 
-use yunwuxin\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Payable;
 
 class TradeWapPayRequest extends Request
 {

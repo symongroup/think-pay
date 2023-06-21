@@ -2,22 +2,22 @@
 // +----------------------------------------------------------------------
 // | ThinkPay
 // +----------------------------------------------------------------------
-// | Copyright (c) yunwuxin All rights reserved.
+// | Copyright (c) symongroup All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
-namespace yunwuxin\pay;
+namespace symongroup\pay;
 
 use InvalidArgumentException;
 use think\helper\Arr;
 use think\Manager;
-use yunwuxin\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Payable;
 
 class Payment extends Manager
 {
-    protected $namespace = '\\yunwuxin\\pay\\channel\\';
+    protected $namespace = '\\symongroup\\pay\\channel\\';
 
     public function gateway(string $name)
     {

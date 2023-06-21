@@ -1,14 +1,14 @@
 <?php
 
-namespace yunwuxin\pay\request\alipay;
+namespace symongroup\pay\request\alipay;
 
 use Carbon\Carbon;
-use yunwuxin\pay\channel\Alipay;
+use symongroup\pay\channel\Alipay;
 
 /**
  * @property Alipay $channel
  */
-abstract class Request extends \yunwuxin\pay\Request
+abstract class Request extends \symongroup\pay\Request
 {
     protected $endpoint        = 'https://openapi.alipay.com/gateway.do';
     protected $sandboxEndpoint = "https://openapi.alipaydev.com/gateway.do";

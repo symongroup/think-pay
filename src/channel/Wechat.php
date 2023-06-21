@@ -2,14 +2,14 @@
 // +----------------------------------------------------------------------
 // | ThinkPay
 // +----------------------------------------------------------------------
-// | Copyright (c) yunwuxin All rights reserved.
+// | Copyright (c) symongroup All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
 
-namespace yunwuxin\pay\channel;
+namespace symongroup\pay\channel;
 
 use Carbon\Carbon;
 use DomainException;
@@ -19,17 +19,17 @@ use Symfony\Component\OptionsResolver\Options;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use think\Cache;
 use think\Request;
-use yunwuxin\pay\Channel;
-use yunwuxin\pay\entity\PurchaseResult;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\interfaces\Refundable;
-use yunwuxin\pay\request\wechat\GetSignKeyRequest;
-use yunwuxin\pay\request\wechat\OrderQueryRequest;
-use yunwuxin\pay\request\wechat\RefundQueryRequest;
-use yunwuxin\pay\request\wechat\RefundRequest;
-use function yunwuxin\pay\array2xml;
-use function yunwuxin\pay\convert_key;
-use function yunwuxin\pay\xml2array;
+use symongroup\pay\Channel;
+use symongroup\pay\entity\PurchaseResult;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Refundable;
+use symongroup\pay\request\wechat\GetSignKeyRequest;
+use symongroup\pay\request\wechat\OrderQueryRequest;
+use symongroup\pay\request\wechat\RefundQueryRequest;
+use symongroup\pay\request\wechat\RefundRequest;
+use function symongroup\pay\array2xml;
+use function symongroup\pay\convert_key;
+use function symongroup\pay\xml2array;
 
 class Wechat extends Channel
 {

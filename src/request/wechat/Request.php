@@ -1,10 +1,10 @@
 <?php
 
-namespace yunwuxin\pay\request\wechat;
+namespace symongroup\pay\request\wechat;
 
-use function yunwuxin\pay\array2xml;
+use function symongroup\pay\array2xml;
 
-abstract class Request extends \yunwuxin\pay\Request
+abstract class Request extends \symongroup\pay\Request
 {
     protected $endpoint = 'https://api.mch.weixin.qq.com';
 

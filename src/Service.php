@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\pay;
+namespace symongroup\pay;
 
 use think\Route;
 
@@ -15,7 +15,7 @@ class Service extends \think\Service
                 } else {
                     $rule = "pay/:channel/notify";
                 }
-                $route->any($rule, '\\yunwuxin\\pay\\NotifyController@index')
+                $route->any($rule, '\\symongroup\\pay\\NotifyController@index')
                     ->completeMatch()
                     ->name('PAY_NOTIFY');
             });

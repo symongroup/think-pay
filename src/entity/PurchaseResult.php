@@ -6,9 +6,9 @@
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
-namespace yunwuxin\pay\entity;
+namespace symongroup\pay\entity;
 
 use Carbon\Carbon;
 

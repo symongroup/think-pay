@@ -1,9 +1,9 @@
 <?php
 
-namespace yunwuxin\pay\request\wechat;
+namespace symongroup\pay\request\wechat;
 
 use think\helper\Str;
-use yunwuxin\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Payable;
 
 class OrderQueryRequest extends Request
 {

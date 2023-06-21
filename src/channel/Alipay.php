@@ -2,13 +2,13 @@
 // +----------------------------------------------------------------------
 // | ThinkPay
 // +----------------------------------------------------------------------
-// | Copyright (c) yunwuxin All rights reserved.
+// | Copyright (c) symongroup All rights reserved.
 // +----------------------------------------------------------------------
 // | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Author: yunwuxin <448901948@qq.com>
+// | Author: symongroup <xiaobo.sun@qq.com>
 // +----------------------------------------------------------------------
-namespace yunwuxin\pay\channel;
+namespace symongroup\pay\channel;
 
 use Carbon\Carbon;
 use DomainException;
@@ -18,14 +18,14 @@ use RuntimeException;
 use Symfony\Component\OptionsResolver\Options;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use think\Request;
-use yunwuxin\pay\Channel;
-use yunwuxin\pay\entity\PurchaseResult;
-use yunwuxin\pay\interfaces\Payable;
-use yunwuxin\pay\interfaces\Refundable;
-use yunwuxin\pay\request\alipay\TradeQueryRequest;
-use yunwuxin\pay\request\alipay\TradeRefundQueryRequest;
-use yunwuxin\pay\request\alipay\TradeRefundRequest;
-use function yunwuxin\pay\convert_key;
+use symongroup\pay\Channel;
+use symongroup\pay\entity\PurchaseResult;
+use symongroup\pay\interfaces\Payable;
+use symongroup\pay\interfaces\Refundable;
+use symongroup\pay\request\alipay\TradeQueryRequest;
+use symongroup\pay\request\alipay\TradeRefundQueryRequest;
+use symongroup\pay\request\alipay\TradeRefundRequest;
+use function symongroup\pay\convert_key;
 
 class Alipay extends Channel
 {

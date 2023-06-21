@@ -1,8 +1,8 @@
 <?php
 
-namespace yunwuxin\pay\request\alipay;
+namespace symongroup\pay\request\alipay;
 
-use yunwuxin\pay\interfaces\Refundable;
+use symongroup\pay\interfaces\Refundable;
 
 class TradeRefundRequest extends Request
 {

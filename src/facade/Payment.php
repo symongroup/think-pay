@@ -1,6 +1,6 @@
 <?php
 
-namespace yunwuxin\pay\facade;
+namespace symongroup\pay\facade;
 
 use think\Facade;
 
@@ -8,6 +8,6 @@ class Payment extends Facade
 {
     protected static function getFacadeClass()
     {
-        return \yunwuxin\pay\Payment::class;
+        return \symongroup\pay\Payment::class;
     }
 }

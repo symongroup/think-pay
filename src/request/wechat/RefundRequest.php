@@ -1,9 +1,9 @@
 <?php
 
-namespace yunwuxin\pay\request\wechat;
+namespace symongroup\pay\request\wechat;
 
 use think\helper\Str;
-use yunwuxin\pay\interfaces\Refundable;
+use symongroup\pay\interfaces\Refundable;
 
 class RefundRequest extends Request
 {
